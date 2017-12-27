@@ -1,6 +1,6 @@
 import requests, pprint
 
-def ocr_space_file(filename='text.png', overlay=False, api_key='725dea855d88957', language='eng'):
+def ocr_space_file(filename='text.png', overlay=False, api_key='...', language='eng'):
     payload = {'isOverlayRequired': overlay,
                'apikey': api_key,
                'language': language,
@@ -13,7 +13,7 @@ def ocr_space_file(filename='text.png', overlay=False, api_key='725dea855d88957'
     return r.content.decode()
 
 
-def ocr_space_url(url, overlay=False, api_key='725dea855d88957', language='eng'):
+def ocr_space_url(url, overlay=False, api_key='...', language='eng'):
     payload = {'url': url,
                'isOverlayRequired': overlay,
                'apikey': api_key,
